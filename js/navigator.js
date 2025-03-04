@@ -11,7 +11,7 @@ export function generateNavigatorHTML()
 		<div class="container-navigator-menu" id="container-navigator-menu">
 			<ul class="navigator-list" id="navigator-list">
 				<li class="navigator-item">
-					<a id="text-home-navigator" class="text-home-navigator text-menu-navigator" href="../html/index.html" data-translate-key="home"></a>
+					<a id="text-home-navigator" class="text-home-navigator text-menu-navigator" href="../index.html" data-translate-key="home"></a>
 				</li>
 				<li class="navigator-item">
 					<a id="text-works-navigator" class="text-works-navigator text-menu-navigator" href="../html/works.html" data-translate-key="work"></a>
