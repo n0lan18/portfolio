@@ -42,14 +42,14 @@ function generateWorksPageHTML()
 					<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s1"></h3>
 					<p class="description-carrousel" data-translate-key="description-carrousel-s1"></p>
 					<input id="button-transcendance-project" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
-					<img id="img-carrousel-s1" class="img-carrousel img-transcendance" src="../images/homepage/transcendance-presentation.png"/>
+					<img id="img-carrousel-s1" class="img-carrousel img-transcendance" src="images/homepage/transcendance-presentation.png"/>
 				</div>
 				<div class="project-2">
 					<h2 class="name-carrousel">So_long</h2>
 					<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s2"></h3>
 					<p class="description-carrousel" data-translate-key="description-carrousel-s2"></p>
 					<input id="button-so-long-project" class="button-carrousel" type=button  data-translate-key="button-carrousel" value="">
-					<img id="img-carrousel-s2" class="img-carrousel" src="../images/homepage/so_long_presentation.png"/>
+					<img id="img-carrousel-s2" class="img-carrousel" src="images/homepage/so_long_presentation.png"/>
 				</div>
 			</div>
 			<div class="container-work-line-1">
@@ -58,7 +58,7 @@ function generateWorksPageHTML()
 					<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s3"></h3>
 					<p class="description-carrousel" data-translate-key="description-carrousel-s3"></p>
 					<input id="button-cub3d-project" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
-					<img id="img-carrousel-s3" class="img-carrousel" src="../images/homepage/cub3d_presentation.png"/>
+					<img id="img-carrousel-s3" class="img-carrousel" src="images/homepage/cub3d_presentation.png"/>
 				</div>
 			</div>
 		</div>

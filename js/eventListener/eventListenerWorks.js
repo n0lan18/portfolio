@@ -4,7 +4,7 @@ export function eventListenerWorks()
 	if (buttonTranscencanceProject)
 	{
 		buttonTranscencanceProject.addEventListener('click', (event) => {
-			window.location.href = "../html/transcendance.html";
+			window.location.href = "../transcendance.html";
 		});
 	}
 
@@ -12,7 +12,7 @@ export function eventListenerWorks()
 	if (buttonSoLongProject)
 	{
 		buttonSoLongProject.addEventListener('click', (event) => {
-			window.location.href = "../html/so_long.html";
+			window.location.href = "../so_long.html";
 		});
 	}
 
@@ -20,7 +20,7 @@ export function eventListenerWorks()
 	if (buttonCub3DProject)
 	{
 		buttonCub3DProject.addEventListener('click', (event) => {
-			window.location.href = "../html/cub3d.html";
+			window.location.href = "../cub3d.html";
 		});
 	}
 }

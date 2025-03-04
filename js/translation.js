@@ -1,16 +1,12 @@
 
 let translations = {};
 
-export async function loadTranslations(homepage)
+export async function loadTranslations()
 {
 	try
 	{
         const lang = localStorage.getItem('language') || 'EN';
-		let response;
-		if (homepage)
-			response = await fetch(`lang/${lang}.json`);
-		else
-			response = await fetch(`../lang/${lang}.json`);
+		const response = await fetch(`lang/${lang}.json`);
 		if (!response.ok) {
             throw new Error(`Erreur de chargement du fichier: ${response.statusText}`);
         }

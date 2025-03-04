@@ -34,7 +34,7 @@ function generateAboutPageHTML()
 		<h1 class="title-page" data-translate-key="about"></h1>
 		<div class="container-presentation-perso">
 			<div class="photo-presentation-perso">
-				<img class="img-presentation-perso" src="../images/homepage/cub3d_presentation.png" alt="photo presentation" />
+				<img class="img-presentation-perso" src="images/homepage/cub3d_presentation.png" alt="photo presentation" />
 			</div>
 			<div class="text-presentation-perso">
 				<h1 class="prenom-presentation">nolan</h1>
@@ -42,7 +42,7 @@ function generateAboutPageHTML()
 				<h2 data-translate-key="profession-dev"></h2>
 				<div class="container-button-presentation">
 					<button class="button-linkedin-presentation" id="button-linkedin-presentation">
-						<img class="img-linkedIn" src="../images/logo-linkedIn.png" alt="logo linkedIn"/>
+						<img class="img-linkedIn" src="images/logo-linkedIn.png" alt="logo linkedIn"/>
 					</button>
 					<button class="button-email-presentation" id="button-email-presentation">
 						<i class="fa-solid fa-envelope img-email"></i>

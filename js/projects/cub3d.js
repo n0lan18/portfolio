@@ -34,7 +34,7 @@ function generateCub3DPageHTML()
 	<div class="container-project" id="container-project">
 		<h1 class="title-page">Cub3D</h1>
 		<div class="container-project-content" id="container-project-content">
-			<video src="../../videos/cub3d.mp4" autoplay loop muted controls></video>
+			<video src="videos/cub3d.mp4" autoplay loop muted controls></video>
 			<h1 class="title-project-page" data-translate-key="project-presentation"></h1>
 			<p class="text-presentation-project-page" data-translate-key="project-description-cub3d"></p>
 			<h1 class="title-project-page" data-translate-key="technologies-demandee"></h1>
