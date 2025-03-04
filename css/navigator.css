@@ -1,0 +1,209 @@
+.container-navigator {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	padding: 1px;
+	gap: 10px;
+	height: 80px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.container-navigator-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: calc(100% - 80px);
+	margin-bottom: 0;
+	margin-top: auto;
+	background-color: white;
+	max-width: 1200px;
+}
+
+.navigator-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+.navigator-item {
+	list-style: none;
+}
+
+.text-menu-navigator {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: rgb(167, 159, 159);
+	text-decoration: none;
+	font-size: 24px;
+	padding: 2px 6px;
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.text-menu-navigator:hover {
+	cursor: pointer;
+	color: black;
+	text-decoration: underline;
+}
+
+.page-menu-navigator-active {
+	font-size: 100px;
+	margin: 0 auto;
+	color: black;
+	padding: 0;
+}
+
+.page-menu-navigator-active:hover {
+	cursor: default;
+	text-decoration: none;
+}
+
+.line-menu-navigator {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 239px;
+	height: 1px;
+	background-color: black;
+	border: none;
+	margin-left: 0;
+
+}
+
+.translate-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+
+.translate-navigator {
+	text-decoration: underline;
+}
+
+.translate-active {
+	cursor: pointer;
+	color: black;
+}
+
+.translate-inactive {
+	cursor: pointer;
+	color: rgb(219, 217, 217);
+}
+
+.translate-inactive:hover {
+	color: black;
+}
+
+.translate-navigator-fr {
+	margin-left: 5px;
+}
+
+.translate-navigator-en {
+	margin-right: 5px;	
+}
+
+.sendMessage-navigator {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}
+
+.hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+	margin-left: 20px;
+}
+  
+.hamburger-line {
+	width: 50px;
+	height: 5px;
+	background-color: white;
+	display: block;
+	margin: 5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+  
+.hamburger-menu:hover {
+	cursor: pointer;
+}
+
+.hamburger-menu.is-active {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+  
+.hamburger-menu.is-active .hamburger-line:nth-child(2) {
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+  
+.hamburger-menu .hamburger-line:nth-child(2) {
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+  
+  
+.hamburger-menu.is-active .hamburger-line:nth-child(2) {
+	opacity: 0;
+}
+  
+.hamburger-menu.is-active .hamburger-line:nth-child(1), .hamburger-menu.is-active .hamburger-line:nth-child(3){
+	width: 35px;
+	-webkit-transform-origin: right;
+	-moz-transform-origin: right;
+	-ms-transform-origin: right;
+	-o-transform-origin: right;
+	transform-origin: right;
+}
+  
+.hamburger-menu.is-active .hamburger-line:nth-child(1) {
+	-webkit-transform: translateY(15px) rotate(45deg);
+	-ms-transform: translateY(15px) rotate(45deg);
+	-o-transform: translateY(15px) rotate(45deg);
+	transform: translateY(15px) rotate(45deg);
+}
+  
+.hamburger-menu.is-active .hamburger-line:nth-child(3) {
+	-webkit-transform: translateY(-15px) rotate(-45deg);
+	-ms-transform: translateY(-15px) rotate(-45deg);
+	-o-transform: translateY(-15px) rotate(-45deg);
+	transform: translateY(-15px) rotate(-45deg);
+}
+
+@media (max-width: 735px)
+{
+	.page-menu-navigator-active {
+		font-size: 40px;
+		margin: 0 auto;
+		color: black;
+		padding: 2px 6px
+	}
+}

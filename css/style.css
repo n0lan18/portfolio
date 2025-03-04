@@ -1,0 +1,57 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+h1, h2, h3, p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { font-size: 2rem; } /* 40px */
+h2 { font-size: 1.5rem; } /* 32px */
+h3 { font-size: 1.17rem; } /* 28px */
+p { font-size: 1rem; } /* 16px */
+
+video {
+	width: calc(100% - 40px);
+	height: auto;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.container-orientation-message {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+@media (max-width: 735px)
+{
+	h1 { font-size: 1.8rem; } /* 36px */
+	h2 { font-size: 1.4rem; } /* 28px */
+	h3 { font-size: 1.2rem; } /* 24px */
+	p { font-size: 0.95rem; } /* 15px */	
+}
