@@ -97,21 +97,21 @@ export function eventListenerHomepage()
 	if (buttonCarrousel_s1)
 	{
 		buttonCarrousel_s1.addEventListener('click', (event) => {
-			window.location.href = "../../transcendance.html";
+			window.location.href = "transcendance.html";
 		});
 	}
 
 	if (buttonCarrousel_s2)
 	{
 		buttonCarrousel_s2.addEventListener('click', (event) => {
-			window.location.href = "../../so_long.html";
+			window.location.href = "so_long.html";
 		});
 	}
 
 	if (buttonCarrousel_s3)
 	{
 		buttonCarrousel_s3.addEventListener('click', (event) => {
-			window.location.href = "../../cub3d.html";
+			window.location.href = "cub3d.html";
 		});
 	}
 
