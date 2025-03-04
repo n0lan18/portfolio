@@ -97,7 +97,7 @@ function generateHomePageHTML()
 
 function generateHomePage()
 {
-	const navigator = generateNavigatorHTML()
+	const navigator = generateNavigatorHTML("homepage")
 	const body = generateHomePageHTML();
 	return navigator + body;
 }
