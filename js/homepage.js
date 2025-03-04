@@ -30,7 +30,7 @@ export async function loadHomepage()
 		document.getElementById("container-video-entrance").style.display = "none";
 	}
 
-	await loadTranslations(homepage);
+	await loadTranslations("homepage");
 	eventListenerNavigator(document.getElementById("container-homepage"));
 	eventListenerHomepage();
 	rotationScreen(document.getElementById("container-homepage"));
