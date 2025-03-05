@@ -12,7 +12,7 @@ export function eventListenerAbout()
 	if (buttonEmail)
 	{
 		buttonEmail.addEventListener('click', () => {
-			window.location.href = '../send-message.html';
+			window.location.href = 'send-message.html';
 		});
 	}
 }

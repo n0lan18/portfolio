@@ -201,4 +201,21 @@ export function eventListenerHomepage()
 		}
 		setInterval(slideAutomat, 3000)
 	}
+
+	const screenContainer = document.getElementById("screens");
+	const imgCarrousel = document.querySelectorAll(".img-carrousel");
+	
+	function checkHeight() {
+		console.log(screenContainer.getBoundingClientRect().height);
+		imgCarrousel.forEach(img => {
+			if (screenContainer.getBoundingClientRect().height < 600 && screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width) {
+				img.style.width = '40%';
+				img.style.height = 'auto';
+			} else {
+				img.style.width = 'auto';
+				img.style.height = '55%';
+			}
+		});
+	}
+	window.addEventListener('resize', checkHeight);
 }

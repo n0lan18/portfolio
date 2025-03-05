@@ -54,29 +54,41 @@ function generateHomePageHTML()
 	   		<ul id="screens" class="screens">
 				<li id="carrousel-s1" class="carrousel-left">
 					<div class="carrousel-s1">
-						<h2 class="name-carrousel">Transcendance</h2>
-						<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s1"></h3>
-						<p class="description-carrousel" data-translate-key="description-carrousel-s1"></p>
-						<input id="button-carrousel-s1" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
-						<img id="img-carrousel-s1" class="img-carrousel img-transcendance" src="images/homepage/transcendance-presentation.png"/>
+						<div class="container-text-carrousel">
+							<h2 class="name-carrousel">Transcendance</h2>
+							<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s1"></h3>
+							<p class="description-carrousel" data-translate-key="description-carrousel-s1"></p>
+							<input id="button-carrousel-s1" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
+						</div>
+						<div class="container-img-carrousel">
+							<img id="img-carrousel-s1" class="img-carrousel" src="images/homepage/transcendance-presentation.png"/>
+						</div>		
 					</div>
 				</li>
 				<li id="carrousel-s2" class="carrousel-active">
 					<div class="carrousel-s2">
-						<h2 class="name-carrousel">So_long</h2>
-						<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s2"></h3>
-						<p class="description-carrousel" data-translate-key="description-carrousel-s2"></p>
-						<input id="button-carrousel-s2" class="button-carrousel" type=button  data-translate-key="button-carrousel" value="">
-						<img id="img-carrousel-s2" class="img-carrousel" src="images/homepage/so_long_presentation.png"/>
+						<div class="container-text-carrousel">
+							<h2 class="name-carrousel">So_long</h2>
+							<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s2"></h3>
+							<p class="description-carrousel" data-translate-key="description-carrousel-s2"></p>
+							<input id="button-carrousel-s2" class="button-carrousel" type=button  data-translate-key="button-carrousel" value="">
+						</div>
+						<div class="container-img-carrousel">
+							<img id="img-carrousel-s2" class="img-carrousel" src="images/homepage/so_long_presentation.png"/>
+						</div>
 					</div>
 				</li>
 				<li id="carrousel-s3" class="carrousel-right">
 					<div class="carrousel-s3">
-						<h2 class="name-carrousel">Cub3D</h2>
-						<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s3"></h3>
-						<p class="description-carrousel" data-translate-key="description-carrousel-s3"></p>
-						<input id="button-carrousel-s3" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
-						<img id="img-carrousel-s3" class="img-carrousel" src="images/homepage/cub3d_presentation.png"/>
+						<div class="container-text-carrousel">
+							<h2 class="name-carrousel">Cub3D</h2>
+							<h3 class="complement-name-carrousel" data-translate-key="complement-name-carrousel-s3"></h3>
+							<p class="description-carrousel" data-translate-key="description-carrousel-s3"></p>
+							<input id="button-carrousel-s3" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
+						</div>
+						<div class="container-img-carrousel">
+							<img id="img-carrousel-s3" class="img-carrousel" src="images/homepage/cub3d_presentation.png"/>
+						</div>		
 					</div>
 				</li>
 			</ul>
