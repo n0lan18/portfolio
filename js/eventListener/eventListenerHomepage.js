@@ -208,10 +208,15 @@ export function eventListenerHomepage()
 	function checkHeight() {
 		console.log(screenContainer.getBoundingClientRect().height);
 		imgCarrousel.forEach(img => {
-			if (screenContainer.getBoundingClientRect().height < 600 && screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width) {
+			if ((screenContainer.getBoundingClientRect().height < 600 && screenContainer.getBoundingClientRect().height > 450) && screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width)
+			{
 				img.style.width = '40%';
 				img.style.height = 'auto';
-			} else {
+			}
+			else if (screenContainer.getBoundingClientRect().height < 450 && screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width)
+				img.style.width = '30%';
+			else
+			{
 				img.style.width = 'auto';
 				img.style.height = '55%';
 			}
