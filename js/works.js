@@ -44,7 +44,7 @@ function generateWorksPageHTML()
 						<p class="description-carrousel" data-translate-key="description-carrousel-s1"></p>
 						<input id="button-transcendance-project" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
 					</div>
-					<div class="container-img-carrousel">
+					<div class="container-img-carrousel-works">
 						<img id="img-carrousel-s1" class="img-carrousel-works" src="images/homepage/transcendance-presentation.png"/>
 					</div>
 				</div>
