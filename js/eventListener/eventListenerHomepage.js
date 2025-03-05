@@ -204,29 +204,34 @@ export function eventListenerHomepage()
 
 	const screenContainer = document.getElementById("screens");
 	const imgCarrousel = document.querySelectorAll(".img-carrousel");
+
+	if (screenContainer.getBoundingClientRect().height > 800)
+	{
+		imgCarrousel.forEach(img => {
+			img.classList.add("img-carrousel-800");
+		});
+	}
 	
 	function checkHeight() {
 		console.log(screenContainer.getBoundingClientRect().height);
+		console.log(screenContainer.getBoundingClientRect().width);
 		imgCarrousel.forEach(img => {
 			if (screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width)
 			{
-				if (screenContainer.getBoundingClientRect().height < 450)
-				{
-					console.log("first");
-					img.style.width = '30%';
-					img.style.height = 'auto';
-				}
+				img.classList.remove("img-carrousel-455");
+				img.classList.remove("img-carrousel-600");
+				img.classList.remove("img-carrousel-800");
+				if (screenContainer.getBoundingClientRect().height < 455)
+					img.classList.add("img-carrousel-455");
 				else if (screenContainer.getBoundingClientRect().height < 600)
-				{
-					console.log("second")
-					img.style.width = '40%';
-					img.style.height = 'auto';
-				}
-				else
-				{
-					img.style.width = 'auto';
-					img.style.height = '55%';
-				}
+					img.classList.add("img-carrousel-600");
+			}
+			else
+			{
+				img.classList.remove("img-carrousel-455");
+				img.classList.remove("img-carrousel-600");
+				if (screenContainer.getBoundingClientRect().height > 800)
+					img.classList.add("img-carrousel-800");
 			}
 		});
 	}

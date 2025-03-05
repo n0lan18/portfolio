@@ -82,4 +82,8 @@
 	.valid-email1 {
 		font-size: 20px;
 	}
+
+	.text-form-sendMessage, .box-form-sendMessage, .button-form-sendMessage {
+		font-size: 16px;
+	}
 }

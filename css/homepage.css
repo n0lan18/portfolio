@@ -172,9 +172,19 @@
 	object-fit: cover;
 }
 
-.img-transcendance {
+.img-carrousel-455 {
+	width: 30%;
+	height: auto;
+}
+
+.img-carrousel-600 {
+	width: 40%;
+	height: auto;
+}
+
+.img-carrousel-800 {
 	width: auto;
-	height: 50%;
+	height: 90%;
 }
 
 .conteneur-pagination {

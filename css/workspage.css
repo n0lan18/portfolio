@@ -29,6 +29,24 @@
 	height: 100%;
 }
 
+.container-img-carrousel-works {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100% - 40px);
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.img-carrousel-works {
+	width: 70%;
+	height: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	object-fit: cover;
+}
+
 .project-1, .project-2, .project-3 {
 	display: flex;
 	flex-direction: column;

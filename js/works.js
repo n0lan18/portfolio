@@ -45,7 +45,7 @@ function generateWorksPageHTML()
 						<input id="button-transcendance-project" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
 					</div>
 					<div class="container-img-carrousel">
-						<img id="img-carrousel-s1" class="img-carrousel" src="images/homepage/transcendance-presentation.png"/>
+						<img id="img-carrousel-s1" class="img-carrousel-works" src="images/homepage/transcendance-presentation.png"/>
 					</div>
 				</div>
 				<div class="project-2">
@@ -55,8 +55,8 @@ function generateWorksPageHTML()
 						<p class="description-carrousel" data-translate-key="description-carrousel-s2"></p>
 						<input id="button-so-long-project" class="button-carrousel" type=button  data-translate-key="button-carrousel" value="">
 					</div>
-					<div class="container-img-carrousel">
-						<img id="img-carrousel-s2" class="img-carrousel" src="images/homepage/so_long_presentation.png"/>
+					<div class="container-img-carrousel-works">
+						<img id="img-carrousel-s2" class="img-carrousel-works" src="images/homepage/so_long_presentation.png"/>
 					</div>
 				</div>
 			</div>
@@ -68,8 +68,8 @@ function generateWorksPageHTML()
 						<p class="description-carrousel" data-translate-key="description-carrousel-s3"></p>
 						<input id="button-cub3d-project" class="button-carrousel" type=button data-translate-key="button-carrousel" value="">
 					</div>
-					<div class="container-img-carrousel">
-						<img id="img-carrousel-s3" class="img-carrousel" src="images/homepage/cub3d_presentation.png"/>
+					<div class="container-img-carrousel-works">
+						<img id="img-carrousel-s3" class="img-carrousel-works" src="images/homepage/cub3d_presentation.png"/>
 					</div>
 				</div>
 			</div>
