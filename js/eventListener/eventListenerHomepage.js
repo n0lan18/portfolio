@@ -213,12 +213,14 @@ export function eventListenerHomepage()
 	}
 	else if (screenContainer.getBoundingClientRect().height < 455)
 	{
+		console.log("kk")
 		imgCarrousel.forEach(img => {
 			img.classList.add("img-carrousel-455");
 		});
 	}
 	else if (screenContainer.getBoundingClientRect().height < 600)
 	{
+		console.log("ppp")
 		imgCarrousel.forEach(img => {
 			img.classList.add("img-carrousel-600");
 		});

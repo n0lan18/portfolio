@@ -34,7 +34,7 @@ function generateAboutPageHTML()
 		<h1 class="title-page" data-translate-key="about"></h1>
 		<div class="container-presentation-perso">
 			<div class="photo-presentation-perso">
-				<img class="img-presentation-perso" src="images/homepage/cub3d_presentation.png" alt="photo presentation" />
+				<img class="img-presentation-perso" src="images/Nolan-photo.jpg" alt="photo presentation" />
 			</div>
 			<div class="text-presentation-perso">
 				<h1 class="prenom-presentation">nolan</h1>
