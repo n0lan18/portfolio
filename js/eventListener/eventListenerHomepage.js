@@ -213,14 +213,12 @@ export function eventListenerHomepage()
 	}
 	else if (screenContainer.getBoundingClientRect().height < 455)
 	{
-		console.log("kk")
 		imgCarrousel.forEach(img => {
 			img.classList.add("img-carrousel-455");
 		});
 	}
 	else if (screenContainer.getBoundingClientRect().height < 600)
 	{
-		console.log("ppp")
 		imgCarrousel.forEach(img => {
 			img.classList.add("img-carrousel-600");
 		});
@@ -230,23 +228,15 @@ export function eventListenerHomepage()
 		console.log(screenContainer.getBoundingClientRect().height);
 		console.log(screenContainer.getBoundingClientRect().width);
 		imgCarrousel.forEach(img => {
-			if (screenContainer.getBoundingClientRect().height < screenContainer.getBoundingClientRect().width)
-			{
-				img.classList.remove("img-carrousel-455");
-				img.classList.remove("img-carrousel-600");
-				img.classList.remove("img-carrousel-800");
-				if (screenContainer.getBoundingClientRect().height < 455)
-					img.classList.add("img-carrousel-455");
-				else if (screenContainer.getBoundingClientRect().height < 600)
-					img.classList.add("img-carrousel-600");
-			}
-			else
-			{
-				img.classList.remove("img-carrousel-455");
-				img.classList.remove("img-carrousel-600");
-				if (screenContainer.getBoundingClientRect().height > 800)
-					img.classList.add("img-carrousel-800");
-			}
+			img.classList.remove("img-carrousel-455");
+			img.classList.remove("img-carrousel-600");
+			img.classList.remove("img-carrousel-800");
+			if (screenContainer.getBoundingClientRect().height < 455)
+				img.classList.add("img-carrousel-455");
+			else if (screenContainer.getBoundingClientRect().height < 600)
+				img.classList.add("img-carrousel-600");
+			else if (screenContainer.getBoundingClientRect().height > 600)
+				img.classList.add("img-carrousel-800");
 		});
 	}
 	window.addEventListener('resize', checkHeight);
