@@ -22,15 +22,13 @@ export async function loadHomepage()
 	console.log(visitSession)
 	if (!visitSession)
 	{
-		document.getElementById("container-homepage").style.display = "none";
-		document.getElementById("container-navigator").style.display = "none";
-		document.getElementById("container-video-entrance").style.display = "flex";
+		document.getElementById("container-homepage").style.display = "flex";
+		document.getElementById("container-navigator").style.display = "flex";
 	}
 	else
 	{
 		document.getElementById("container-homepage").style.display = "flex";
 		document.getElementById("container-navigator").style.display = "flex";
-		document.getElementById("container-video-entrance").style.display = "none";
 	}
 
 	await loadTranslations("homepage");
@@ -47,9 +45,6 @@ function generateHomePageHTML()
 		<h1>
 			<i class="fa-solid fa-rotate"></i>
 		</h1>
-	</div>
-	<div class="container-video-entrance" id="container-video-entrance">
-		<video class="video-entrance" id="video-entrance" src="videos/entree-portfolio.mp4" autoplay muted playsinline></video>
 	</div>
 	<div class="container-homepage" id="container-homepage">
 		<h1 class="title-page" data-translate-key="home"></h1>
