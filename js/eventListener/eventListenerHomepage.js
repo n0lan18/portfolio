@@ -1,14 +1,6 @@
 export function eventListenerHomepage()
 {
 
-	const videoEntrance = document.getElementById("video-entrance");
-	videoEntrance.addEventListener('ended', () => {
-		document.getElementById("container-video-entrance").style.display = "none";
-		document.getElementById("container-homepage").style.display = "flex";
-		document.getElementById("container-navigator").style.display = "flex";
-		sessionStorage.setItem("visit", "ok");
-	});
-
 
 	let index = 0;
 
