@@ -13,7 +13,10 @@ export async function loadSendMessage()
 {
 	const app = document.getElementById("app");
 	if (app)
+	{
 		app.innerHTML = generateSendMessagePage();
+		app.classList.add("app-theme");
+	}
 
 	await loadTranslations();
 	eventListenerNavigator(document.getElementById("container-sendMessage"));

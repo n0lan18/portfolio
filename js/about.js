@@ -13,7 +13,10 @@ export async function loadAboutpage()
 {
 	const app = document.getElementById("app");
 	if (app)
+	{
 		app.innerHTML = generateAboutPage();
+		app.classList.add("app-theme");
+	}
 
 	await loadTranslations();
 	eventListenerNavigator(document.getElementById("container-about"));

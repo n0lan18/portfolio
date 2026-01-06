@@ -13,7 +13,10 @@ export async function loadHomepage()
 {
 	const app = document.getElementById("app");
 	if (app)
+	{
 		app.innerHTML = generateHomePage();
+		app.classList.add("app-theme", "app-homepage");
+	}
 
 	const visitSession = sessionStorage.getItem("visit");
 	console.log(visitSession)

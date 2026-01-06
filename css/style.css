@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: black;
+	background-color: #0b1013;
 	overflow: hidden;
 }
 
 body {
-	font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
 	font-size: 16px;
-	color: white;
+	color: #f6f2ea;
 }
 
 .app {
@@ -31,6 +33,44 @@ h1 { font-size: 2rem; } /* 40px */
 h2 { font-size: 1.5rem; } /* 32px */
 h3 { font-size: 1.17rem; } /* 28px */
 p { font-size: 1rem; } /* 16px */
+
+.app-theme {
+	--bg-1: #0b1013;
+	--bg-2: #101b1a;
+	--ink: #f6f2ea;
+	--ink-muted: #c8c2b8;
+	--accent: #f2c14e;
+	--accent-2: #3bb3a6;
+	--card-1: #113338;
+	--card-2: #1b2030;
+	--card-3: #213126;
+	color: var(--ink);
+	background:
+		radial-gradient(1200px 600px at 10% -10%, rgba(59, 179, 166, 0.18), transparent 60%),
+		radial-gradient(900px 500px at 100% 8%, rgba(242, 193, 78, 0.18), transparent 55%),
+		linear-gradient(160deg, var(--bg-1) 0%, #0f1716 45%, var(--bg-2) 100%);
+	position: relative;
+	font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+}
+
+.app-theme::before {
+	content: "";
+	position: absolute;
+	inset: -20%;
+	background:
+		linear-gradient(120deg, rgba(255, 255, 255, 0.05), transparent 55%),
+		repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 90px),
+		repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 90px);
+	opacity: 0.35;
+	pointer-events: none;
+}
+
+.app-theme h1,
+.app-theme h2,
+.app-theme h3,
+.app-theme p {
+	font-family: inherit;
+}
 
 video {
 	width: calc(100% - 40px);

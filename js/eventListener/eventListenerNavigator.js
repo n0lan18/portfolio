@@ -70,4 +70,8 @@ function modifyTextMenuActive(elementPage)
 		document.getElementById("text-home-navigator").classList.add("page-menu-navigator-active");
 	else if (elementPage.id == "container-workspage")
 		document.getElementById("text-works-navigator").classList.add("page-menu-navigator-active");
+	else if (elementPage.id == "container-about")
+		document.getElementById("text-about-navigator").classList.add("page-menu-navigator-active");
+		else if (elementPage.id == "container-sendMessage")
+		document.getElementById("text-send-message-navigator").classList.add("page-menu-navigator-active");
 }

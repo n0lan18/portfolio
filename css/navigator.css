@@ -1,16 +1,16 @@
 .container-navigator {
-	font-family: Arial, Helvetica, sans-serif;
-	color: black;
+	font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+	color: var(--ink);
 	display: flex;
 	position: absolute;
 	justify-content: space-between;
 	align-items: center;
 	top: 0;
-	padding: 0;
+	padding: 0 24px;
 	gap: 10px;
 	height: 80px;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1300px;
 }
 
 .container-navigator-menu {
@@ -22,8 +22,7 @@
 	height: calc(100% - 80px);
 	margin-bottom: 0;
 	margin-top: auto;
-	background-color: white;
-	max-width: 1200px;
+	max-width: 1300px;
 }
 
 .navigator-list {
@@ -33,6 +32,8 @@
 	align-items: flex-start;
 	width: 100%;
 	height: 100%;
+	padding: 20px 24px;
+	margin-left: 20px;
 }
 
 .navigator-item {
@@ -40,32 +41,35 @@
 }
 
 .text-menu-navigator {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	color: rgb(167, 159, 159);
+	font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+	font-weight: 600;
+	color: var(--ink-muted);
 	text-decoration: none;
-	font-size: 24px;
-	padding: 2px 6px;
+	font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+	padding: 4px 8px;
 	display: block;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    font-weight: 600;
     unicode-bidi: isolate;
+	letter-spacing: 0.04em;
 }
 
 .text-menu-navigator:hover {
 	cursor: pointer;
-	color: black;
-	text-decoration: underline;
+	color: var(--ink);
+	text-decoration: none;
 }
 
 .page-menu-navigator-active {
-	font-size: 100px;
+	font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+	font-size: clamp(3rem, 10vw, 6rem);
 	margin: 0 auto;
-	color: black;
+	color: var(--ink);
 	padding: 0;
+	letter-spacing: 0.06em;
 }
 
 .page-menu-navigator-active:hover {
@@ -77,9 +81,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 239px;
+	width: 220px;
 	height: 1px;
-	background-color: black;
 	border: none;
 	margin-left: 0;
 
@@ -92,24 +95,27 @@
 	align-items: center;
 	width: auto;
 	height: auto;
+	margin-left: 10px;
 }
 
 .translate-navigator {
 	text-decoration: underline;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
 }
 
 .translate-active {
 	cursor: pointer;
-	color: black;
+	color: var(--ink);
 }
 
 .translate-inactive {
 	cursor: pointer;
-	color: rgb(219, 217, 217);
+	color: rgba(246, 242, 234, 0.4);
 }
 
 .translate-inactive:hover {
-	color: black;
+	color: var(--ink);
 }
 
 .translate-navigator-fr {
@@ -137,14 +143,19 @@
 }
   
 .hamburger-line {
-	width: 50px;
-	height: 5px;
-	background-color: white;
+	width: 42px;
+	height: 4px;
+	background-color: var(--ink);
 	display: block;
 	margin: 5px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+.container-navigator-menu .name-homepage {
+	filter: invert(1);
+	opacity: 0.9;
 }
   
 .hamburger-menu:hover {
@@ -203,7 +214,7 @@
 	.page-menu-navigator-active {
 		font-size: 40px;
 		margin: 0 auto;
-		color: black;
+
 		padding: 2px 6px
 	}
 }

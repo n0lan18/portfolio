@@ -15,6 +15,7 @@ export async function loadTranscendancePage()
 	{
 		app.innerHTML = "";
 		app.innerHTML = generateTranscendancePage();
+		app.classList.add("app-theme");
 	}
 
 	await loadTranslations();

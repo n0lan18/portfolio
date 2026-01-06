@@ -15,6 +15,7 @@ export async function loadSoLongPage()
 	{
 		app.innerHTML = "";
 		app.innerHTML = generateSoLongPage();
+		app.classList.add("app-theme");
 	}
 
 	await loadTranslations();

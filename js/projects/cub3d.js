@@ -15,6 +15,7 @@ export async function loadCub3DPage()
 	{
 		app.innerHTML = "";
 		app.innerHTML = generateCub3DPage();
+		app.classList.add("app-theme");
 	}
 
 	await loadTranslations();
