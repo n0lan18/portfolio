@@ -16,7 +16,7 @@ export function eventListenerSendMessage()
                 message: document.getElementById("message").value
             };
 
-			emailjs.send("service_56fk69r", "template_sn9g6gh", templateParams)
+			emailjs.send("service_crmef7j", "template_sn9g6gh", templateParams)
 			.then(response => {
 				const containerValidMail = document.getElementById("container-valid-email");
 				if (containerValidMail)

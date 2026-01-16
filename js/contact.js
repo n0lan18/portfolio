@@ -1,3 +1,4 @@
+(() => {
 // ========================
 // Contact Form Handler
 // ========================
@@ -88,7 +89,7 @@ async function sendContactEmail(data) {
     };
 
     try {
-        const response = await emailjs.send("service_56fk69r", "template_sn9g6gh", templateParams);
+        const response = await emailjs.send("service_crmef7j", "template_sn9g6gh", templateParams);
         return response;
     } catch (error) {
         console.error('EmailJS error:', error);
@@ -175,3 +176,4 @@ document.querySelectorAll('.form-container, .info-card, .social-links').forEach(
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+})();
