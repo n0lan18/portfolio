@@ -25,7 +25,7 @@ export function eventListenerSendMessage()
 					containerValidMail.classList.remove("container-valid-email");
 					containerValidMail.classList.add("container-valid-email-active");
 					setTimeout(() => {
-						window.location.href = "index.html";
+						window.location.href = "/portfolio/index.html";
 					}, 5000);
 				}
 

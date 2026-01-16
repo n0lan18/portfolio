@@ -11,7 +11,7 @@ export function generateNavigatorHTML()
 		<div class="container-navigator-menu" id="container-navigator-menu">
 			<ul class="navigator-list" id="navigator-list">
 				<li class="navigator-item">
-					<a id="text-home-navigator" class="text-menu-navigator text-menu-navigator" href="index.html" data-translate-key="home"></a>
+					<a id="text-home-navigator" class="text-menu-navigator text-menu-navigator" href="/portfolio/index.html" data-translate-key="home"></a>
 				</li>
 				<li class="navigator-item">
 					<a id="text-works-navigator" class="text-works-navigator text-menu-navigator" href="works.html" data-translate-key="work"></a>
@@ -20,7 +20,7 @@ export function generateNavigatorHTML()
 					<a id="text-about-navigator" class="text-about-navigator text-menu-navigator" href="about.html" data-translate-key="about"></a>
 				</li>
 				<li class="navigator-item">
-					<a id="text-send-message-navigator" class="text-send-message-navigator text-menu-navigator" href="send-message.html" data-translate-key="send-message"></a>
+					<a id="text-send-message-navigator" class="text-send-message-navigator text-menu-navigator" href="/portfolio/send-message.html" data-translate-key="send-message"></a>
 				</li>
 				<hr class="line-menu-navigator">
 				<li class="navigator-item">
