@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Game Development & 2D Graphics</span>
+                <span class="project-category" data-translate-key="so-long-category">Game Development & 2D Graphics</span>
                 <h1 class="project-title">So Long</h1>
-                <p class="project-tagline">Jeu 2D de collecte et d'évasion avec rendu graphique en C</p>
+                <p class="project-tagline" data-translate-key="so-long-tagline">Jeu 2D de collecte et d'évasion avec rendu graphique en C</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="so-long-about">
                         So Long est un jeu 2D de type top-down développé en C avec la bibliothèque MinilibX dans le cadre de l'école 42. 
                         Le joueur doit collecter tous les objets sur la carte avant de pouvoir s'échapper par la sortie, tout en évitant 
                         les ennemis. Ce projet explore les bases du développement de jeux vidéo et du rendu graphique 2D.
@@ -57,40 +62,40 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités principales</h2>
+                    <h2 data-translate-key="project-features-title">Fonctionnalités principales</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Rendu graphique 2D</strong>
-                            <p>Affichage de sprites, de tuiles et d'animations avec la bibliothèque MinilibX</p>
+                            <strong data-translate-key="so-long-feature-1-title">Rendu graphique 2D</strong>
+                            <p data-translate-key="so-long-feature-1-desc">Affichage de sprites, de tuiles et d'animations avec la bibliothèque MinilibX</p>
                         </li>
                         <li>
-                            <strong>Système de collecte</strong>
-                            <p>Mécanique de jeu basée sur la collecte d'objets pour débloquer la sortie</p>
+                            <strong data-translate-key="so-long-feature-2-title">Système de collecte</strong>
+                            <p data-translate-key="so-long-feature-2-desc">Mécanique de jeu basée sur la collecte d'objets pour débloquer la sortie</p>
                         </li>
                         <li>
-                            <strong>Parser de carte</strong>
-                            <p>Lecture et validation de fichiers .ber pour charger les niveaux</p>
+                            <strong data-translate-key="so-long-feature-3-title">Parser de carte</strong>
+                            <p data-translate-key="so-long-feature-3-desc">Lecture et validation de fichiers .ber pour charger les niveaux</p>
                         </li>
                         <li>
-                            <strong>Gestion des collisions</strong>
-                            <p>Détection des collisions avec les murs, objets et ennemis</p>
+                            <strong data-translate-key="so-long-feature-4-title">Gestion des collisions</strong>
+                            <p data-translate-key="so-long-feature-4-desc">Détection des collisions avec les murs, objets et ennemis</p>
                         </li>
                         <li>
-                            <strong>Compteur de mouvements</strong>
-                            <p>Affichage en temps réel du nombre de déplacements effectués</p>
+                            <strong data-translate-key="so-long-feature-5-title">Compteur de mouvements</strong>
+                            <p data-translate-key="so-long-feature-5-desc">Affichage en temps réel du nombre de déplacements effectués</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
                             </div>
                             <h3>C</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
@@ -99,7 +104,7 @@
                                 </svg>
                             </div>
                             <h3>MinilibX</h3>
-                            <p>Graphics</p>
+                            <p data-translate-key="tech-graphics">Graphics</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
@@ -110,14 +115,14 @@
                                 </svg>
                             </div>
                             <h3>Game Logic</h3>
-                            <p>2D Engine</p>
+                            <p data-translate-key="tech-2d-engine">2D Engine</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Défis techniques</h2>
-                    <p>
+                    <h2 data-translate-key="project-challenges-title">Défis techniques</h2>
+                    <p data-translate-key="so-long-challenges">
                         Le principal défi était de gérer efficacement les événements clavier et le rendu graphique sans utiliser de moteur 
                         de jeu. La création d'un parser de carte robuste capable de valider différents formats et de gérer les erreurs 
                         a également été un aspect important. L'optimisation du rendu pour maintenir des performances fluides avec de 
@@ -126,7 +131,7 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Aperçu du jeu</h2>
+                    <h2 data-translate-key="so-long-gallery-title">Aperçu du jeu</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="Gameplay" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Level design" loading="lazy">
@@ -139,15 +144,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

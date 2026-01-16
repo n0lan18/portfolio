@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Gestion & Productivité</span>
+                <span class="project-category" data-translate-key="monhoraire-category">Gestion & Productivité</span>
                 <h1 class="project-title">monhoraire.ch</h1>
-                <p class="project-tagline">Solution complète de gestion de plannings et d'employés</p>
+                <p class="project-tagline" data-translate-key="monhoraire-tagline">Solution complète de gestion de plannings et d'employés</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="monhoraire-about">
                         monhoraire.ch est une plateforme SaaS conçue pour simplifier la gestion des horaires et des équipes. 
                         Elle permet aux entreprises de créer, modifier et partager des plannings en temps réel, tout en facilitant 
                         la communication entre managers et employés.
@@ -57,75 +62,75 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités clés</h2>
+                    <h2 data-translate-key="monhoraire-features-title">Fonctionnalités clés</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Création de plannings intuitive</strong>
-                            <p>Interface drag-and-drop pour créer et modifier rapidement les horaires</p>
+                            <strong data-translate-key="monhoraire-feature-1-title">Création de plannings intuitive</strong>
+                            <p data-translate-key="monhoraire-feature-1-desc">Interface drag-and-drop pour créer et modifier rapidement les horaires</p>
                         </li>
                         <li>
-                            <strong>Gestion des employés</strong>
-                            <p>Base de données complète avec disponibilités, compétences et historique</p>
+                            <strong data-translate-key="monhoraire-feature-2-title">Gestion des employés</strong>
+                            <p data-translate-key="monhoraire-feature-2-desc">Base de données complète avec disponibilités, compétences et historique</p>
                         </li>
                         <li>
-                            <strong>Synchronisation temps réel</strong>
-                            <p>Mise à jour instantanée des modifications pour toute l'équipe</p>
+                            <strong data-translate-key="monhoraire-feature-3-title">Synchronisation temps réel</strong>
+                            <p data-translate-key="monhoraire-feature-3-desc">Mise à jour instantanée des modifications pour toute l'équipe</p>
                         </li>
                         <li>
-                            <strong>Notifications automatiques</strong>
-                            <p>Alertes par email et notifications push pour les changements d'horaire</p>
+                            <strong data-translate-key="monhoraire-feature-4-title">Notifications automatiques</strong>
+                            <p data-translate-key="monhoraire-feature-4-desc">Alertes par email et notifications push pour les changements d'horaire</p>
                         </li>
                         <li>
-                            <strong>Export et rapports</strong>
-                            <p>Génération de rapports PDF et export vers différents formats</p>
+                            <strong data-translate-key="monhoraire-feature-5-title">Export et rapports</strong>
+                            <p data-translate-key="monhoraire-feature-5-desc">Génération de rapports PDF et export vers différents formats</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
                             </div>
                             <h3>React</h3>
-                            <p>Frontend</p>
+                            <p data-translate-key="tech-frontend">Frontend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
                             </div>
                             <h3>TypeScript</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" />
                             </div>
                             <h3>TailwindCSS</h3>
-                            <p>Styling</p>
+                            <p data-translate-key="tech-styling">Styling</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
                             </div>
                             <h3>Supabase</h3>
-                            <p>Backend</p>
+                            <p data-translate-key="tech-backend">Backend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                             </div>
                             <h3>PostgreSQL</h3>
-                            <p>Database</p>
+                            <p data-translate-key="tech-database">Database</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Cas d'usage</h2>
-                    <p>
+                    <h2 data-translate-key="monhoraire-usecases-title">Cas d'usage</h2>
+                    <p data-translate-key="monhoraire-usecases">
                         La plateforme s'adresse particulièrement aux restaurants, magasins, hôtels et toute entreprise nécessitant 
                         une gestion flexible des horaires. Elle permet de réduire considérablement le temps consacré à la planification 
                         tout en minimisant les erreurs et les conflits d'horaires.
@@ -133,7 +138,7 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Interface de l'application</h2>
+                    <h2 data-translate-key="monhoraire-gallery-title">Interface de l'application</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="Dashboard" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2b7?w=800" alt="Planning view" loading="lazy">
@@ -146,15 +151,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

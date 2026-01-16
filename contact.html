@@ -29,9 +29,14 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
@@ -41,10 +46,10 @@
         <div class="container">
             <div class="contact-header">
                 <h1 class="contact-title">
-                    Let's create something
-                    <span class="title-gradient">amazing together</span>
+                    <span data-translate-key="contact-title-main">Let's create something</span>
+                    <span class="title-gradient" data-translate-key="contact-title-sub">amazing together</span>
                 </h1>
-                <p class="contact-subtitle">
+                <p class="contact-subtitle" data-translate-key="contact-subtitle">
                     Que vous ayez un projet en tête ou simplement envie de discuter, 
                     je serais ravi d'échanger avec vous.
                 </p>
@@ -55,55 +60,59 @@
                 <div class="form-container">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">Nom</label>
+                            <label for="name" class="form-label" data-translate-key="contact-label-name">Nom</label>
                             <input 
                                 type="text" 
                                 id="name" 
                                 name="name" 
                                 class="form-input" 
                                 placeholder="Votre nom"
+                                data-translate-key="contact-placeholder-name"
                                 required
                             >
                         </div>
 
                         <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label" data-translate-key="contact-label-email">Email</label>
                             <input 
                                 type="email" 
                                 id="email" 
                                 name="email" 
                                 class="form-input" 
                                 placeholder="votre@email.com"
+                                data-translate-key="contact-placeholder-email"
                                 required
                             >
                         </div>
 
                         <div class="form-group">
-                            <label for="subject" class="form-label">Sujet</label>
+                            <label for="subject" class="form-label" data-translate-key="contact-label-subject">Sujet</label>
                             <input 
                                 type="text" 
                                 id="subject" 
                                 name="subject" 
                                 class="form-input" 
                                 placeholder="À propos de..."
+                                data-translate-key="contact-placeholder-subject"
                                 required
                             >
                         </div>
 
                         <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
+                            <label for="message" class="form-label" data-translate-key="contact-label-message">Message</label>
                             <textarea 
                                 id="message" 
                                 name="message" 
                                 class="form-textarea" 
                                 placeholder="Parlez-moi de votre projet..."
+                                data-translate-key="contact-placeholder-message"
                                 rows="6"
                                 required
                             ></textarea>
                         </div>
 
                         <button type="submit" class="form-submit">
-                            <span>Envoyer le message</span>
+                            <span data-translate-key="contact-submit">Envoyer le message</span>
                             <svg class="submit-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -119,9 +128,9 @@
                                 <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3 class="info-title">Email</h3>
+                        <h3 class="info-title" data-translate-key="contact-info-email">Email</h3>
                         <a href="mailto:nolan.leggeri@gmail.com" class="info-link">nolan.leggeri@gmail.com</a>
-                        <p class="info-text">Réponse sous 24h</p>
+                        <p class="info-text" data-translate-key="contact-info-email-sub">Réponse sous 24h</p>
                     </div>
 
                     <div class="info-card">
@@ -131,9 +140,9 @@
                                 <path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3 class="info-title">Téléphone</h3>
+                        <h3 class="info-title" data-translate-key="contact-info-phone">Téléphone</h3>
                         <a href="tel:+41762373804" class="info-link">+41 76 237 38 04</a>
-                        <p class="info-text">Lun-Ven 9h-18h</p>
+                        <p class="info-text" data-translate-key="contact-info-phone-sub">Lun-Ven 9h-18h</p>
                     </div>
 
                     <div class="info-card">
@@ -143,13 +152,13 @@
                                 <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3 class="info-title">Localisation</h3>
-                        <p class="info-link">Lausanne, Suisse</p>
-                        <p class="info-text">Disponible à distance</p>
+                        <h3 class="info-title" data-translate-key="contact-info-location">Localisation</h3>
+                        <p class="info-link" data-translate-key="contact-info-location-value">Lausanne, Suisse</p>
+                        <p class="info-text" data-translate-key="contact-info-location-sub">Disponible à distance</p>
                     </div>
 
                     <div class="social-links">
-                        <h3 class="info-title">Suivez-moi</h3>
+                        <h3 class="info-title" data-translate-key="contact-social-title">Suivez-moi</h3>
                         <div class="social-grid">
                             <a href="https://www.linkedin.com/in/nleggeri/" target="_blank" class="social-link">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -173,11 +182,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
@@ -186,5 +195,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/karlis-inspired.js"></script>
     <script src="js/contact.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

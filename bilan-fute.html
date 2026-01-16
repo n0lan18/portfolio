@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Automatisation & Analyse</span>
+                <span class="project-category" data-translate-key="bilan-category">Automatisation & Analyse</span>
                 <h1 class="project-title">Bilan Futé</h1>
-                <p class="project-tagline">Automatisation de bilan thermique avec interface intuitive</p>
+                <p class="project-tagline" data-translate-key="bilan-tagline">Automatisation de bilan thermique avec interface intuitive</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="bilan-about">
                         Bilan Futé est une plateforme web innovante conçue pour automatiser et simplifier la création de bilans thermiques. 
                         L'application permet aux professionnels de l'énergie de générer rapidement des analyses précises tout en visualisant 
                         les données en 3D pour une meilleure compréhension.
@@ -57,78 +62,78 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités clés</h2>
+                    <h2 data-translate-key="bilan-features-title">Fonctionnalités clés</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Automatisation complète</strong>
-                            <p>Génération automatique de bilans thermiques basée sur les données saisies</p>
+                            <strong data-translate-key="bilan-feature-1-title">Automatisation complète</strong>
+                            <p data-translate-key="bilan-feature-1-desc">Génération automatique de bilans thermiques basée sur les données saisies</p>
                         </li>
                         <li>
-                            <strong>Visualisation 3D</strong>
-                            <p>Représentation interactive des bâtiments et des flux thermiques avec Three.js</p>
+                            <strong data-translate-key="bilan-feature-2-title">Visualisation 3D</strong>
+                            <p data-translate-key="bilan-feature-2-desc">Représentation interactive des bâtiments et des flux thermiques avec Three.js</p>
                         </li>
                         <li>
-                            <strong>Base de données robuste</strong>
-                            <p>Stockage sécurisé et synchronisation en temps réel avec Supabase</p>
+                            <strong data-translate-key="bilan-feature-3-title">Base de données robuste</strong>
+                            <p data-translate-key="bilan-feature-3-desc">Stockage sécurisé et synchronisation en temps réel avec Supabase</p>
                         </li>
                         <li>
-                            <strong>Interface intuitive</strong>
-                            <p>Design moderne et responsive développé avec React et TypeScript</p>
+                            <strong data-translate-key="bilan-feature-4-title">Interface intuitive</strong>
+                            <p data-translate-key="bilan-feature-4-desc">Design moderne et responsive développé avec React et TypeScript</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
                             </div>
                             <h3>React</h3>
-                            <p>Frontend</p>
+                            <p data-translate-key="tech-frontend">Frontend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
                             </div>
                             <h3>TypeScript</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="Three.js" />
                             </div>
                             <h3>Three.js</h3>
-                            <p>3D Visualization</p>
+                            <p data-translate-key="tech-3d-visualization">3D Visualization</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
                             </div>
                             <h3>Supabase</h3>
-                            <p>Backend</p>
+                            <p data-translate-key="tech-backend">Backend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                             </div>
                             <h3>PostgreSQL</h3>
-                            <p>Database</p>
+                            <p data-translate-key="tech-database">Database</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Défis techniques</h2>
-                    <p>
+                    <h2 data-translate-key="project-challenges-title">Défis techniques</h2>
+                    <p data-translate-key="bilan-challenges">
                         Le principal défi de ce projet était de créer une visualisation 3D performante tout en gérant des calculs thermiques complexes. 
                         L'intégration de Three.js avec React a nécessité une architecture optimisée pour assurer fluidité et précision des rendus.
                     </p>
                 </section>
 
                 <section class="content-section">
-                    <h2>Images du projet</h2>
+                    <h2 data-translate-key="project-gallery-title">Images du projet</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Dashboard" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Analytics" loading="lazy">
@@ -141,15 +146,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

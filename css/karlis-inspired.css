@@ -197,6 +197,38 @@ a {
     gap: 2.5rem;
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 1.5rem;
+}
+
+.translate-navigator {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    cursor: pointer;
+}
+
+.translate-active {
+    color: var(--color-text);
+}
+
+.translate-inactive {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.translate-separator {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+
 .nav-link {
     font-size: 1.1rem;
     font-weight: 600;
@@ -313,11 +345,13 @@ a {
 }
 
 /* Scroll Indicator */
-.scroll-indicator {
+.work-section > .scroll-indicator {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-    padding: 0 3rem;
+    width: 100%;
+    padding: 0;
     margin-top: 3rem;
     opacity: 0.6;
     animation: fadeInUp 1s ease 0.5s forwards;
@@ -784,6 +818,15 @@ a {
     .nav-links {
         gap: 1rem;
     }
+
+    .lang-switch {
+        margin-left: 0.75rem;
+    }
+
+    .translate-navigator {
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+    }
     
     .nav-link {
         font-size: 0.85rem;
@@ -791,8 +834,7 @@ a {
         padding: 0.25rem 0;
     }
     
-    .scroll-indicator {
-        padding: 0 1.5rem;
+    .work-section > .scroll-indicator {
         margin-top: 2rem;
     }
     

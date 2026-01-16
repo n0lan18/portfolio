@@ -28,9 +28,14 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
@@ -39,15 +44,15 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">
-                Développeur Full Stack<br>
-                <span class="hero-subtitle">& Designer d'interfaces</span>
+                <span data-translate-key="hero-title-main">Développeur Full Stack</span><br>
+                <span class="hero-subtitle" data-translate-key="hero-title-sub">& Designer d'interfaces</span>
             </h1>
             <p class="hero-description">
-                Je crée des expériences digitales qui allient performance technique et excellence design.
+                <span data-translate-key="hero-description">Je crée des expériences digitales qui allient performance technique et excellence design.</span>
             </p>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll</span>
+            <span data-translate-key="hero-scroll">Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </section>
@@ -55,7 +60,7 @@
     <!-- Selected Work Section -->
     <section class="work-section" id="work">
         <div class="section-header">
-            <h2 class="section-title">Selected Work</h2>
+            <h2 class="section-title" data-translate-key="section-selected-work">Selected Work</h2>
         </div>
         
         <div class="projects-horizontal">
@@ -63,14 +68,14 @@
             <article class="project-item">
                 <a href="/portfolio/transcendance.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 1</span>
+                        <span class="project-label" data-translate-key="project-label-1">Projet 1</span>
                         <h3 class="project-title">Transcendance</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/transcendance-presentation.png" alt="Transcendance Pong 3D" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Développement complet d'un jeu de pong en 3D compatible navigateurs web et mobiles.</p>
+                        <p class="project-description" data-translate-key="project-1-description">Développement complet d'un jeu de pong en 3D compatible navigateurs web et mobiles.</p>
                         <p class="project-tags">Three.js · WebSocket · Django · PostgreSQL</p>
                     </div>
                 </a>
@@ -80,14 +85,14 @@
             <article class="project-item">
                 <a href="/portfolio/bilan-fute.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 2</span>
+                        <span class="project-label" data-translate-key="project-label-2">Projet 2</span>
                         <h3 class="project-title">Bilan futé</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/bilan-fute_presentation.png" alt="Bilan futé" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Automatisation de bilan thermique avec interface intuitive et analyse de données en temps réel.</p>
+                        <p class="project-description" data-translate-key="project-2-description">Automatisation de bilan thermique avec interface intuitive et analyse de données en temps réel.</p>
                         <p class="project-tags">React · TypeScript · Supabase · PostgreSQL · Three.js</p>
                     </div>
                 </a>
@@ -97,14 +102,14 @@
             <article class="project-item">
                 <a href="/portfolio/apprendre-ensemble.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 3</span>
+                        <span class="project-label" data-translate-key="project-label-3">Projet 3</span>
                         <h3 class="project-title">Apprendre ensemble</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/apprendre-ensemble_presentation.png" alt="Apprendre ensemble" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Plateforme d'aide au corps enseignant pour accompagner les élèves aux troubles dys avec outils pédagogiques adaptés.</p>
+                        <p class="project-description" data-translate-key="project-3-description">Plateforme d'aide au corps enseignant pour accompagner les élèves aux troubles dys avec outils pédagogiques adaptés.</p>
                         <p class="project-tags">React · TypeScript · Supabase · PostgreSQL · Three.js</p>
                     </div>
                 </a>
@@ -114,14 +119,14 @@
             <article class="project-item">
                 <a href="/portfolio/monhoraire.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 4</span>
+                        <span class="project-label" data-translate-key="project-label-4">Projet 4</span>
                         <h3 class="project-title">monhoraire.ch</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/monhoraire_presentation.png" alt="monhoraire.ch" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Outil de création de plannings et de gestion des employés avec interface intuitive et synchronisation en temps réel.</p>
+                        <p class="project-description" data-translate-key="project-4-description">Outil de création de plannings et de gestion des employés avec interface intuitive et synchronisation en temps réel.</p>
                         <p class="project-tags">React · TypeScript · Supabase · PostgreSQL</p>
                     </div>
                 </a>
@@ -131,14 +136,14 @@
             <article class="project-item">
                 <a href="/portfolio/cub3d.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 5</span>
+                        <span class="project-label" data-translate-key="project-label-5">Projet 5</span>
                         <h3 class="project-title">Cub3D</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/cub3d_presentation.png" alt="Cub3D" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Création d'un jeu en 3D inspiré de Wolfenstein 3D utilisant le raycasting, entièrement codé en C.</p>
+                        <p class="project-description" data-translate-key="project-5-description">Création d'un jeu en 3D inspiré de Wolfenstein 3D utilisant le raycasting, entièrement codé en C.</p>
                         <p class="project-tags">C · MinilibX · Raycasting · Graphics</p>
                     </div>
                 </a>
@@ -148,14 +153,14 @@
             <article class="project-item">
                 <a href="/portfolio/so_long.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label">Projet 6</span>
+                        <span class="project-label" data-translate-key="project-label-6">Projet 6</span>
                         <h3 class="project-title">So Long</h3>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage/so_long_presentation.png" alt="So Long" loading="lazy">
                     </div>
                     <div class="project-footer">
-                        <p class="project-description">Création d'un jeu 2D de type top-down avec système de collecte et déplacement, entièrement codé en C.</p>
+                        <p class="project-description" data-translate-key="project-6-description">Création d'un jeu 2D de type top-down avec système de collecte et déplacement, entièrement codé en C.</p>
                         <p class="project-tags">C · MinilibX · Game Development · 2D Graphics</p>
                     </div>
                 </a>
@@ -164,7 +169,7 @@
         
         <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <span class="scroll-text">Scroll pour plus de projets</span>
+            <span class="scroll-text" data-translate-key="scroll-more-projects">Scroll pour plus de projets</span>
             <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -175,26 +180,26 @@
     <section class="about-section" id="about">
         <div class="about-grid">
             <div class="about-content">
-                <h2 class="section-title">À propos</h2>
+                <h2 class="section-title" data-translate-key="section-about-title">À propos</h2>
                 <div class="about-text">
-                    <p>
+                    <p data-translate-key="paragraphe-1">
                         J'ai commencé mes études dans le domaine du commerce et ai accumulé une expérience de 10 ans dans ce secteur. Ma première expérience a été chez Intersport où j'ai travaillé pendant 5 ans, avant de me lancer en 2016 en créant ma propre entreprise. À cette époque, je concevais des vêtements et des logos, et c'est là que ma passion pour l'informatique et la création a véritablement pris naissance. Cette aventure entrepreneuriale a duré un an et demi.
                     </p>
-                    <p>
+                    <p data-translate-key="paragraphe-2">
                         Par la suite, j'ai rejoint le secteur du commerce pour participer à l'ouverture de magasins de la marque Decathlon en Suisse. En 2022, après 4 années enrichissantes dans ce domaine, j'ai pris la décision de quitter mon poste à temps plein pour me réorienter vers une carrière dans la programmation. J'ai intégré l'école 42, où j'ai découvert le code pour la première fois.
                     </p>
-                    <p>
+                    <p data-translate-key="paragraphe-3">
                         Contrairement à mon parcours scolaire précédent, cette expérience a éveillé en moi une véritable passion pour l'apprentissage. Cette soif de connaissance n'a cessé de croître, et aujourd'hui, elle nourrit mes projets futurs avec un enthousiasme sans cesse renouvelé.
                     </p>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
                         <span class="stat-number">3+</span>
-                        <span class="stat-label">Années d'expérience</span>
+                        <span class="stat-label" data-translate-key="stat-years">Années d'expérience</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Clients satisfaits</span>
+                        <span class="stat-label" data-translate-key="stat-clients">Clients satisfaits</span>
                     </div>
                 </div>
             </div>
@@ -207,7 +212,7 @@
     <!-- Skills Section -->
     <section class="skills-section">
         <div class="section-header">
-            <h2 class="section-title">Compétences</h2>
+            <h2 class="section-title" data-translate-key="section-skills-title">Compétences</h2>
         </div>
         <div class="skills-carousel">
             <div class="skills-track">
@@ -365,13 +370,13 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="contact-content">
-            <h2 class="section-title">Let's work together</h2>
-            <p class="contact-description">
+            <h2 class="section-title" data-translate-key="section-contact-title">Let's work together</h2>
+            <p class="contact-description" data-translate-key="section-contact-description">
                 Un projet en tête ? Discutons de la façon dont je peux vous aider à le concrétiser.
             </p>
             <div class="contact-methods">
                 <a href="/portfolio/contact.html" class="contact-link">
-                    <span>Email</span>
+                    <span data-translate-key="contact-email">Email</span>
                     <span class="arrow">→</span>
                 </a>
                 <a href="https://www.linkedin.com/in/nleggeri/" target="_blank" class="contact-link">
@@ -389,16 +394,17 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#work" data-translate-key="nav-work">Work</a>
+                <a href="#about" data-translate-key="nav-about">About</a>
+                <a href="#contact" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

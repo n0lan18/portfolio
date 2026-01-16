@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Game Development & 3D</span>
+                <span class="project-category" data-translate-key="transcendance-category">Game Development & 3D</span>
                 <h1 class="project-title">Transcendance</h1>
-                <p class="project-tagline">Jeu de pong multijoueur en 3D avec chat en temps réel</p>
+                <p class="project-tagline" data-translate-key="transcendance-tagline">Jeu de pong multijoueur en 3D avec chat en temps réel</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="transcendance-about">
                         Transcendance est un jeu de pong multijoueur en 3D développé dans le cadre du projet final de l'école 42. 
                         Ce projet combine rendu 3D avec Three.js, communication temps réel via WebSocket, et une architecture backend robuste avec Django.
                         Les joueurs peuvent s'affronter en ligne, communiquer via un chat intégré, et suivre leurs statistiques.
@@ -57,96 +62,96 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités principales</h2>
+                    <h2 data-translate-key="project-features-title">Fonctionnalités principales</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Rendu 3D immersif</strong>
-                            <p>Jeu de pong entièrement modélisé en 3D avec Three.js, offrant une expérience visuelle moderne</p>
+                            <strong data-translate-key="transcendance-feature-1-title">Rendu 3D immersif</strong>
+                            <p data-translate-key="transcendance-feature-1-desc">Jeu de pong entièrement modélisé en 3D avec Three.js, offrant une expérience visuelle moderne</p>
                         </li>
                         <li>
-                            <strong>Multijoueur en temps réel</strong>
-                            <p>Communication WebSocket pour des parties fluides et réactives entre joueurs</p>
+                            <strong data-translate-key="transcendance-feature-2-title">Multijoueur en temps réel</strong>
+                            <p data-translate-key="transcendance-feature-2-desc">Communication WebSocket pour des parties fluides et réactives entre joueurs</p>
                         </li>
                         <li>
-                            <strong>Système de chat intégré</strong>
-                            <p>Chat en temps réel permettant aux joueurs de communiquer pendant les parties</p>
+                            <strong data-translate-key="transcendance-feature-3-title">Système de chat intégré</strong>
+                            <p data-translate-key="transcendance-feature-3-desc">Chat en temps réel permettant aux joueurs de communiquer pendant les parties</p>
                         </li>
                         <li>
-                            <strong>Authentification sécurisée</strong>
-                            <p>Système d'inscription et de connexion avec gestion de profils utilisateurs</p>
+                            <strong data-translate-key="transcendance-feature-4-title">Authentification sécurisée</strong>
+                            <p data-translate-key="transcendance-feature-4-desc">Système d'inscription et de connexion avec gestion de profils utilisateurs</p>
                         </li>
                         <li>
-                            <strong>Statistiques et classement</strong>
-                            <p>Suivi des performances, historique des parties et tableau des scores</p>
+                            <strong data-translate-key="transcendance-feature-5-title">Statistiques et classement</strong>
+                            <p data-translate-key="transcendance-feature-5-desc">Suivi des performances, historique des parties et tableau des scores</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="Three.js" />
                             </div>
                             <h3>Three.js</h3>
-                            <p>3D Graphics</p>
+                            <p data-translate-key="tech-3d-graphics">3D Graphics</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
                             </div>
                             <h3>JavaScript</h3>
-                            <p>Frontend</p>
+                            <p data-translate-key="tech-frontend">Frontend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" />
                             </div>
                             <h3>HTML5</h3>
-                            <p>Markup</p>
+                            <p data-translate-key="tech-markup">Markup</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" style="filter: brightness(0) invert(1);" />
                             </div>
                             <h3>Django</h3>
-                            <p>Backend</p>
+                            <p data-translate-key="tech-backend">Backend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
                             </div>
                             <h3>Python</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                             </div>
                             <h3>PostgreSQL</h3>
-                            <p>Database</p>
+                            <p data-translate-key="tech-database">Database</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" />
                             </div>
                             <h3>Docker</h3>
-                            <p>Container</p>
+                            <p data-translate-key="tech-container">Container</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="Nginx" />
                             </div>
                             <h3>Nginx</h3>
-                            <p>Web Server</p>
+                            <p data-translate-key="tech-web-server">Web Server</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Défis techniques</h2>
-                    <p>
+                    <h2 data-translate-key="project-challenges-title">Défis techniques</h2>
+                    <p data-translate-key="transcendance-challenges">
                         Le principal défi était de synchroniser le jeu en temps réel entre plusieurs joueurs avec une latence minimale. 
                         L'implémentation d'un système de WebSocket robuste et la gestion des collisions en 3D ont été des aspects cruciaux du projet. 
                         L'optimisation des performances pour garantir 60 FPS constants a également nécessité une attention particulière.
@@ -154,7 +159,7 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Aperçu du jeu</h2>
+                    <h2 data-translate-key="transcendance-gallery-title">Aperçu du jeu</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Gameplay 3D" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="Multijoueur" loading="lazy">
@@ -167,15 +172,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Éducation & Accessibilité</span>
+                <span class="project-category" data-translate-key="apprendre-category">Éducation & Accessibilité</span>
                 <h1 class="project-title">Apprendre Ensemble</h1>
-                <p class="project-tagline">Plateforme d'aide au corps enseignant pour les élèves aux troubles dys</p>
+                <p class="project-tagline" data-translate-key="apprendre-tagline">Plateforme d'aide au corps enseignant pour les élèves aux troubles dys</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="apprendre-about">
                         Apprendre Ensemble est une plateforme éducative innovante qui assiste les enseignants dans l'accompagnement des élèves 
                         présentant des troubles dys (dyslexie, dyspraxie, dyscalculie, etc.). L'application propose des outils pédagogiques adaptés 
                         et des ressources personnalisées pour favoriser l'inclusion scolaire.
@@ -57,71 +62,71 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités principales</h2>
+                    <h2 data-translate-key="project-features-title">Fonctionnalités principales</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Outils pédagogiques adaptés</strong>
-                            <p>Bibliothèque d'exercices et ressources adaptées aux différents troubles dys</p>
+                            <strong data-translate-key="apprendre-feature-1-title">Outils pédagogiques adaptés</strong>
+                            <p data-translate-key="apprendre-feature-1-desc">Bibliothèque d'exercices et ressources adaptées aux différents troubles dys</p>
                         </li>
                         <li>
-                            <strong>Suivi personnalisé</strong>
-                            <p>Système de suivi des progrès de chaque élève avec visualisation graphique</p>
+                            <strong data-translate-key="apprendre-feature-2-title">Suivi personnalisé</strong>
+                            <p data-translate-key="apprendre-feature-2-desc">Système de suivi des progrès de chaque élève avec visualisation graphique</p>
                         </li>
                         <li>
-                            <strong>Collaboration enseignant-parent</strong>
-                            <p>Espace de communication pour coordonner l'accompagnement de l'élève</p>
+                            <strong data-translate-key="apprendre-feature-3-title">Collaboration enseignant-parent</strong>
+                            <p data-translate-key="apprendre-feature-3-desc">Espace de communication pour coordonner l'accompagnement de l'élève</p>
                         </li>
                         <li>
-                            <strong>Visualisation interactive</strong>
-                            <p>Modules 3D pour faciliter l'apprentissage spatial avec Three.js</p>
+                            <strong data-translate-key="apprendre-feature-4-title">Visualisation interactive</strong>
+                            <p data-translate-key="apprendre-feature-4-desc">Modules 3D pour faciliter l'apprentissage spatial avec Three.js</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
                             </div>
                             <h3>React</h3>
-                            <p>Frontend</p>
+                            <p data-translate-key="tech-frontend">Frontend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" />
                             </div>
                             <h3>TypeScript</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg" alt="Three.js" />
                             </div>
                             <h3>Three.js</h3>
-                            <p>3D Graphics</p>
+                            <p data-translate-key="tech-3d-graphics">3D Graphics</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" />
                             </div>
                             <h3>Supabase</h3>
-                            <p>Backend</p>
+                            <p data-translate-key="tech-backend">Backend</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                             </div>
                             <h3>PostgreSQL</h3>
-                            <p>Database</p>
+                            <p data-translate-key="tech-database">Database</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Impact et objectifs</h2>
-                    <p>
+                    <h2 data-translate-key="apprendre-impact-title">Impact et objectifs</h2>
+                    <p data-translate-key="apprendre-impact">
                         Ce projet vise à faciliter le quotidien des enseignants tout en améliorant l'expérience d'apprentissage des élèves 
                         en difficulté. L'accessibilité et l'inclusivité sont au cœur de chaque fonctionnalité développée, permettant à chaque 
                         élève de progresser à son rythme avec les outils adaptés.
@@ -129,7 +134,7 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Captures d'écran</h2>
+                    <h2 data-translate-key="project-gallery-title">Captures d'écran</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800" alt="Interface enseignant" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=800" alt="Exercices adaptés" loading="lazy">
@@ -142,15 +147,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>

@@ -25,21 +25,26 @@
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
             <div class="nav-links">
-                <a href="/portfolio/index.html#work" class="nav-link">Work</a>
-                <a href="/portfolio/index.html#about" class="nav-link">About</a>
-                <a href="/portfolio/contact.html" class="nav-link">Contact</a>
+                <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+            </div>
+            <div class="lang-switch" id="translate-container">
+                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                <span class="translate-separator">/</span>
+                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
             </div>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link">← Retour aux projets</a>
+            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
             
             <div class="project-hero">
-                <span class="project-category">Game Development & Graphics</span>
+                <span class="project-category" data-translate-key="cub3d-category">Game Development & Graphics</span>
                 <h1 class="project-title">Cub3D</h1>
-                <p class="project-tagline">Moteur de rendu 3D inspiré de Wolfenstein 3D avec raycasting</p>
+                <p class="project-tagline" data-translate-key="cub3d-tagline">Moteur de rendu 3D inspiré de Wolfenstein 3D avec raycasting</p>
             </div>
 
             <div class="project-image-full">
@@ -48,8 +53,8 @@
 
             <div class="project-content">
                 <section class="content-section">
-                    <h2>À propos du projet</h2>
-                    <p>
+                    <h2 data-translate-key="project-about-title">À propos du projet</h2>
+                    <p data-translate-key="cub3d-about">
                         Cub3D est un projet de l'école 42 qui consiste à créer un moteur de rendu 3D from scratch en utilisant 
                         la technique du raycasting, popularisée par Wolfenstein 3D. Entièrement codé en C avec la bibliothèque graphique 
                         MinilibX, ce projet explore les fondamentaux du rendu 3D et de l'infographie.
@@ -57,40 +62,40 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Fonctionnalités principales</h2>
+                    <h2 data-translate-key="project-features-title">Fonctionnalités principales</h2>
                     <ul class="features-list">
                         <li>
-                            <strong>Raycasting 3D</strong>
-                            <p>Implémentation complète de l'algorithme de raycasting pour un rendu 3D en temps réel</p>
+                            <strong data-translate-key="cub3d-feature-1-title">Raycasting 3D</strong>
+                            <p data-translate-key="cub3d-feature-1-desc">Implémentation complète de l'algorithme de raycasting pour un rendu 3D en temps réel</p>
                         </li>
                         <li>
-                            <strong>Textures et sprites</strong>
-                            <p>Support des textures murales et des sprites 2D avec gestion de la transparence</p>
+                            <strong data-translate-key="cub3d-feature-2-title">Textures et sprites</strong>
+                            <p data-translate-key="cub3d-feature-2-desc">Support des textures murales et des sprites 2D avec gestion de la transparence</p>
                         </li>
                         <li>
-                            <strong>Minimap interactive</strong>
-                            <p>Carte 2D affichant la position du joueur et la structure du niveau</p>
+                            <strong data-translate-key="cub3d-feature-3-title">Minimap interactive</strong>
+                            <p data-translate-key="cub3d-feature-3-desc">Carte 2D affichant la position du joueur et la structure du niveau</p>
                         </li>
                         <li>
-                            <strong>Contrôles fluides</strong>
-                            <p>Déplacement WASD et rotation de la caméra à la souris</p>
+                            <strong data-translate-key="cub3d-feature-4-title">Contrôles fluides</strong>
+                            <p data-translate-key="cub3d-feature-4-desc">Déplacement WASD et rotation de la caméra à la souris</p>
                         </li>
                         <li>
-                            <strong>Parser de carte</strong>
-                            <p>Système de lecture de fichiers .cub pour configurer les niveaux</p>
+                            <strong data-translate-key="cub3d-feature-5-title">Parser de carte</strong>
+                            <p data-translate-key="cub3d-feature-5-desc">Système de lecture de fichiers .cub pour configurer les niveaux</p>
                         </li>
                     </ul>
                 </section>
 
                 <section class="content-section">
-                    <h2>Technologies utilisées</h2>
+                    <h2 data-translate-key="project-tech-title">Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
                             <div class="tech-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
                             </div>
                             <h3>C</h3>
-                            <p>Language</p>
+                            <p data-translate-key="tech-language">Language</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
@@ -99,7 +104,7 @@
                                 </svg>
                             </div>
                             <h3>MinilibX</h3>
-                            <p>Graphics</p>
+                            <p data-translate-key="tech-graphics">Graphics</p>
                         </div>
                         <div class="tech-item">
                             <div class="tech-icon">
@@ -108,14 +113,14 @@
                                 </svg>
                             </div>
                             <h3>Raycasting</h3>
-                            <p>Algorithm</p>
+                            <p data-translate-key="tech-algorithm">Algorithm</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-section">
-                    <h2>Défis techniques</h2>
-                    <p>
+                    <h2 data-translate-key="project-challenges-title">Défis techniques</h2>
+                    <p data-translate-key="cub3d-challenges">
                         Le plus grand défi était de comprendre et implémenter l'algorithme de raycasting sans utiliser de bibliothèque 
                         3D existante. La gestion de la projection des textures sur les murs, le calcul des distances correctes pour éviter 
                         l'effet fish-eye, et l'optimisation pour maintenir des performances fluides ont été des aspects cruciaux du développement.
@@ -123,7 +128,7 @@
                 </section>
 
                 <section class="content-section">
-                    <h2>Captures d'écran</h2>
+                    <h2 data-translate-key="project-gallery-title">Captures d'écran</h2>
                     <div class="project-gallery">
                         <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800" alt="Vue 3D" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800" alt="Textures" loading="lazy">
@@ -136,15 +141,16 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <p data-translate-key="footer-rights">© 2026 Nolan Leggeri. All rights reserved.</p>
             <div class="footer-links">
-                <a href="/portfolio/index.html#work">Work</a>
-                <a href="/portfolio/index.html#about">About</a>
-                <a href="/portfolio/contact.html">Contact</a>
+                <a href="/portfolio/index.html#work" data-translate-key="nav-work">Work</a>
+                <a href="/portfolio/index.html#about" data-translate-key="nav-about">About</a>
+                <a href="/portfolio/contact.html" data-translate-key="nav-contact">Contact</a>
             </div>
         </div>
     </footer>
 
     <script src="js/karlis-inspired.js"></script>
+    <script type="module" src="js/language-toggle.js"></script>
 </body>
 </html>
