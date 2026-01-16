@@ -206,7 +206,11 @@ a {
 
 .translate-navigator {
     background: none;
+    background-color: transparent;
     border: 0;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
     padding: 0;
     font: inherit;
     font-size: 0.75rem;
