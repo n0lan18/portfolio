@@ -15,7 +15,7 @@ export async function loadSendMessage()
 	if (app)
 	{
 		app.innerHTML = generateSendMessagePage();
-		app.classList.add("app-theme");
+		app.classList.add("app-theme", "app-sendmessage");
 	}
 
 	await loadTranslations();

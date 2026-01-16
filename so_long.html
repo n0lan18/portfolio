@@ -1,27 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>So_long project - Porfolio N.Leggeri</title>
-
-    <!-- Inclure FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navigator.css">
-    <link rel="stylesheet" href="css/homepage.css">
-	<link rel="stylesheet" href="css/projects.css">
-
+    <title>So Long - Nolan Leggeri</title>
     
-    <!-- Inclure jQuery et Bootstrap JS -->
-<!--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
--->    <script type="module" src='js/projects/so_long.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/karlis-inspired.css">
+    <link rel="stylesheet" href="css/project-detail.css">
 </head>
 <body>
-    <div class="app" id="app"></div>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">
+                <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="/#work" class="nav-link">Work</a>
+                <a href="/#about" class="nav-link">About</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <div class="container">
+            <a href="/#work" class="back-link">← Retour aux projets</a>
+            
+            <div class="project-hero">
+                <span class="project-category">Game Development & 2D Graphics</span>
+                <h1 class="project-title">So Long</h1>
+                <p class="project-tagline">Jeu 2D de collecte et d'évasion avec rendu graphique en C</p>
+            </div>
+
+            <div class="project-image-full">
+                <img src="images/homepage/so_long_presentation.png" alt="So Long" loading="lazy">
+            </div>
+
+            <div class="project-content">
+                <section class="content-section">
+                    <h2>À propos du projet</h2>
+                    <p>
+                        So Long est un jeu 2D de type top-down développé en C avec la bibliothèque MinilibX dans le cadre de l'école 42. 
+                        Le joueur doit collecter tous les objets sur la carte avant de pouvoir s'échapper par la sortie, tout en évitant 
+                        les ennemis. Ce projet explore les bases du développement de jeux vidéo et du rendu graphique 2D.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <ul class="features-list">
+                        <li>
+                            <strong>Rendu graphique 2D</strong>
+                            <p>Affichage de sprites, de tuiles et d'animations avec la bibliothèque MinilibX</p>
+                        </li>
+                        <li>
+                            <strong>Système de collecte</strong>
+                            <p>Mécanique de jeu basée sur la collecte d'objets pour débloquer la sortie</p>
+                        </li>
+                        <li>
+                            <strong>Parser de carte</strong>
+                            <p>Lecture et validation de fichiers .ber pour charger les niveaux</p>
+                        </li>
+                        <li>
+                            <strong>Gestion des collisions</strong>
+                            <p>Détection des collisions avec les murs, objets et ennemis</p>
+                        </li>
+                        <li>
+                            <strong>Compteur de mouvements</strong>
+                            <p>Affichage en temps réel du nombre de déplacements effectués</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
+                            </div>
+                            <h3>C</h3>
+                            <p>Language</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="#ffffff" width="40" height="40">
+                                    <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L19.82 8 12 11.82 4.18 8 12 4.18zM4 9.45l7 3.5v7.87l-7-3.5V9.45zm9 11.37v-7.87l7-3.5v7.87l-7 3.5z"/>
+                                </svg>
+                            </div>
+                            <h3>MinilibX</h3>
+                            <p>Graphics</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <svg viewBox="0 0 24 24" fill="#ffffff" width="40" height="40">
+                                    <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/>
+                                    <circle cx="8" cy="8" r="2"/>
+                                    <circle cx="16" cy="8" r="2"/>
+                                </svg>
+                            </div>
+                            <h3>Game Logic</h3>
+                            <p>2D Engine</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Défis techniques</h2>
+                    <p>
+                        Le principal défi était de gérer efficacement les événements clavier et le rendu graphique sans utiliser de moteur 
+                        de jeu. La création d'un parser de carte robuste capable de valider différents formats et de gérer les erreurs 
+                        a également été un aspect important. L'optimisation du rendu pour maintenir des performances fluides avec de 
+                        nombreux sprites à l'écran a nécessité une attention particulière.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Aperçu du jeu</h2>
+                    <div class="project-gallery">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="Gameplay" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Level design" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800" alt="Interface" loading="lazy">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Nolan Leggeri. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/#work">Work</a>
+                <a href="/#about">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/karlis-inspired.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ export async function loadAboutpage()
 	if (app)
 	{
 		app.innerHTML = generateAboutPage();
-		app.classList.add("app-theme");
+		app.classList.add("app-theme", "app-about");
 	}
 
 	await loadTranslations();

@@ -16,7 +16,7 @@ export async function loadWorksPage()
 	{
 		app.innerHTML = "";
 		app.innerHTML = generateWorksPage();
-		app.classList.add("app-theme");
+		app.classList.add("app-theme", "app-workspage");
 	}
 
 	await loadTranslations();
