@@ -175,6 +175,46 @@ if ('IntersectionObserver' in window) {
     images.forEach(img => imageObserver.observe(img));
 }
 
+const navLinks = document.querySelector('.nav-links');
+const navToggle = document.querySelector('.nav-toggle');
+
+const closeNavigation = () => {
+    if (!navLinks) return;
+    navLinks.classList.remove('is-open');
+    if (navToggle) {
+        navToggle.classList.remove('is-active');
+        navToggle.setAttribute('aria-expanded', 'false');
+    }
+};
+
+navToggle?.addEventListener('click', () => {
+    if (!navLinks) return;
+    const isOpen = navLinks.classList.toggle('is-open');
+    navToggle.classList.toggle('is-active', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+
+navLinks?.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => closeNavigation());
+});
+
+navLinks?.querySelectorAll('.translate-navigator').forEach(button => {
+    button.addEventListener('click', () => closeNavigation());
+});
+
+document.addEventListener('click', (event) => {
+    if (!navLinks || !navToggle) return;
+    if (!event.target.closest('.nav') && navLinks.classList.contains('is-open')) {
+        closeNavigation();
+    }
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024) {
+        closeNavigation();
+    }
+});
+
 // Console signature
 console.log('%cNolan Leggeri', 'font-size: 24px; font-weight: bold;');
 console.log('%cPortfolio · 2026', 'font-size: 12px; color: #999;');

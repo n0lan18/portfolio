@@ -24,27 +24,33 @@
             <a href="/portfolio/index.html" class="logo">
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="main-nav">
                 <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
                 <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
                 <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+                <div class="lang-switch" id="translate-container">
+                    <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                    <span class="translate-separator">/</span>
+                    <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
+                </div>
             </div>
-            <div class="lang-switch" id="translate-container">
-                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
-                <span class="translate-separator">/</span>
-                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
-            </div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
-            
             <div class="project-hero">
                 <span class="project-category" data-translate-key="monhoraire-category">Gestion & Productivité</span>
                 <h1 class="project-title">monhoraire.ch</h1>
                 <p class="project-tagline" data-translate-key="monhoraire-tagline">Solution complète de gestion de plannings et d'employés</p>
+                <div class="project-cta-row">
+                    <a href="https://monhoraire.ch" class="project-site-btn" target="_blank" rel="noreferrer">Visiter le site</a>
+                </div>
             </div>
 
             <div class="project-image-full">
@@ -135,15 +141,6 @@
                         une gestion flexible des horaires. Elle permet de réduire considérablement le temps consacré à la planification 
                         tout en minimisant les erreurs et les conflits d'horaires.
                     </p>
-                </section>
-
-                <section class="content-section">
-                    <h2 data-translate-key="monhoraire-gallery-title">Interface de l'application</h2>
-                    <div class="project-gallery">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="Dashboard" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1611224885990-ab7363d1f2b7?w=800" alt="Planning view" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800" alt="Team management" loading="lazy">
-                    </div>
                 </section>
             </div>
         </div>

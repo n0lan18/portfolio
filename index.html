@@ -27,16 +27,21 @@
             <a href="/portfolio/index.html" class="logo">
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="main-nav">
                 <a href="#work" class="nav-link" data-translate-key="nav-work">Work</a>
                 <a href="#about" class="nav-link" data-translate-key="nav-about">About</a>
                 <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+                <div class="lang-switch" id="translate-container">
+                    <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                    <span class="translate-separator">/</span>
+                    <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
+                </div>
             </div>
-            <div class="lang-switch" id="translate-container">
-                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
-                <span class="translate-separator">/</span>
-                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
-            </div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
@@ -67,10 +72,13 @@
             <!-- Project 1 -->
             <article class="project-item">
                 <a href="/portfolio/transcendance.html" class="project-link">
-                    <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-1">Projet 1</span>
-                        <h3 class="project-title">Transcendance</h3>
-                    </div>
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-label" data-translate-key="project-label-1">Projet 1</span>
+                    <span class="project-category">École 42</span>
+                </div>
+                <h3 class="project-title">Transcendance</h3>
+            </div>
                     <div class="project-image">
                         <img src="images/homepage/transcendance-presentation.png" alt="Transcendance Pong 3D" loading="lazy">
                     </div>
@@ -84,10 +92,13 @@
             <!-- Project 2 -->
             <article class="project-item">
                 <a href="/portfolio/bilan-fute.html" class="project-link">
-                    <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-2">Projet 2</span>
-                        <h3 class="project-title">Bilan futé</h3>
-                    </div>
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-label" data-translate-key="project-label-2">Projet 2</span>
+                    <span class="project-category">Stage</span>
+                </div>
+                <h3 class="project-title">Bilan futé</h3>
+            </div>
                     <div class="project-image">
                         <img src="images/homepage/bilan-fute_presentation.png" alt="Bilan futé" loading="lazy">
                     </div>
@@ -101,10 +112,13 @@
             <!-- Project 3 -->
             <article class="project-item">
                 <a href="/portfolio/apprendre-ensemble.html" class="project-link">
-                    <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-3">Projet 3</span>
-                        <h3 class="project-title">Apprendre ensemble</h3>
-                    </div>
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-label" data-translate-key="project-label-3">Projet 3</span>
+                    <span class="project-category">Stage</span>
+                </div>
+                <h3 class="project-title">Apprendre ensemble</h3>
+            </div>
                     <div class="project-image">
                         <img src="images/homepage/apprendre-ensemble_presentation.png" alt="Apprendre ensemble" loading="lazy">
                     </div>
@@ -118,10 +132,13 @@
             <!-- Project 4 -->
             <article class="project-item">
                 <a href="/portfolio/monhoraire.html" class="project-link">
-                    <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-4">Projet 4</span>
-                        <h3 class="project-title">monhoraire.ch</h3>
-                    </div>
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-label" data-translate-key="project-label-4">Projet 4</span>
+                    <span class="project-category">Stage</span>
+                </div>
+                <h3 class="project-title">monhoraire.ch</h3>
+            </div>
                     <div class="project-image">
                         <img src="images/homepage/monhoraire_presentation.png" alt="monhoraire.ch" loading="lazy">
                     </div>
@@ -136,7 +153,10 @@
             <article class="project-item">
                 <a href="/portfolio/cub3d.html" class="project-link">
                     <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-5">Projet 5</span>
+                        <div class="project-meta">
+                            <span class="project-label" data-translate-key="project-label-5">Projet 5</span>
+                            <span class="project-category">École 42</span>
+                        </div>
                         <h3 class="project-title">Cub3D</h3>
                     </div>
                     <div class="project-image">
@@ -152,10 +172,13 @@
             <!-- Project 6 -->
             <article class="project-item">
                 <a href="/portfolio/so_long.html" class="project-link">
-                    <div class="project-header">
-                        <span class="project-label" data-translate-key="project-label-6">Projet 6</span>
-                        <h3 class="project-title">So Long</h3>
-                    </div>
+            <div class="project-header">
+                <div class="project-meta">
+                    <span class="project-label" data-translate-key="project-label-6">Projet 6</span>
+                    <span class="project-category">École 42</span>
+                </div>
+                <h3 class="project-title">So Long</h3>
+            </div>
                     <div class="project-image">
                         <img src="images/homepage/so_long_presentation.png" alt="So Long" loading="lazy">
                     </div>
@@ -166,14 +189,13 @@
                 </a>
             </article>
         </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
+            <div class="scroll-indicator">
             <span class="scroll-text" data-translate-key="scroll-more-projects">Scroll pour plus de projets</span>
             <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
+        
     </section>
 
     <!-- About Section -->

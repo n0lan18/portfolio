@@ -24,27 +24,33 @@
             <a href="/portfolio/index.html" class="logo">
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="main-nav">
                 <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
                 <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
                 <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+                <div class="lang-switch" id="translate-container">
+                    <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                    <span class="translate-separator">/</span>
+                    <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
+                </div>
             </div>
-            <div class="lang-switch" id="translate-container">
-                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
-                <span class="translate-separator">/</span>
-                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
-            </div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
-            
             <div class="project-hero">
                 <span class="project-category" data-translate-key="apprendre-category">Éducation & Accessibilité</span>
                 <h1 class="project-title">Apprendre Ensemble</h1>
                 <p class="project-tagline" data-translate-key="apprendre-tagline">Plateforme d'aide au corps enseignant pour les élèves aux troubles dys</p>
+                <div class="project-cta-row">
+                    <a href="https://app.apprendre-ensemble.ch" class="project-site-btn" target="_blank" rel="noreferrer">Visiter le site</a>
+                </div>
             </div>
 
             <div class="project-image-full">
@@ -131,15 +137,6 @@
                         en difficulté. L'accessibilité et l'inclusivité sont au cœur de chaque fonctionnalité développée, permettant à chaque 
                         élève de progresser à son rythme avec les outils adaptés.
                     </p>
-                </section>
-
-                <section class="content-section">
-                    <h2 data-translate-key="project-gallery-title">Captures d'écran</h2>
-                    <div class="project-gallery">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800" alt="Interface enseignant" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=800" alt="Exercices adaptés" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Suivi des progrès" loading="lazy">
-                    </div>
                 </section>
             </div>
         </div>

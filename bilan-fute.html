@@ -24,27 +24,33 @@
             <a href="/portfolio/index.html" class="logo">
                 <img src="images/name/nolanLEGGERI-white.svg" alt="Nolan Leggeri" class="logo-img">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="main-nav">
                 <a href="/portfolio/index.html#work" class="nav-link" data-translate-key="nav-work">Work</a>
                 <a href="/portfolio/index.html#about" class="nav-link" data-translate-key="nav-about">About</a>
                 <a href="/portfolio/contact.html" class="nav-link" data-translate-key="nav-contact">Contact</a>
+                <div class="lang-switch" id="translate-container">
+                    <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
+                    <span class="translate-separator">/</span>
+                    <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
+                </div>
             </div>
-            <div class="lang-switch" id="translate-container">
-                <button id="translate-navigator-en" class="translate-navigator translate-active" type="button">EN</button>
-                <span class="translate-separator">/</span>
-                <button id="translate-navigator-fr" class="translate-navigator translate-inactive" type="button">FR</button>
-            </div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main class="project-detail">
         <div class="container">
-            <a href="/portfolio/index.html#work" class="back-link" data-translate-key="project-back">← Retour aux projets</a>
-            
             <div class="project-hero">
                 <span class="project-category" data-translate-key="bilan-category">Automatisation & Analyse</span>
                 <h1 class="project-title">Bilan Futé</h1>
                 <p class="project-tagline" data-translate-key="bilan-tagline">Automatisation de bilan thermique avec interface intuitive</p>
+                <div class="project-cta-row">
+                    <a href="https://bilan-fute.ch" class="project-site-btn" target="_blank" rel="noreferrer">Visiter le site</a>
+                </div>
             </div>
 
             <div class="project-image-full">
@@ -130,15 +136,6 @@
                         Le principal défi de ce projet était de créer une visualisation 3D performante tout en gérant des calculs thermiques complexes. 
                         L'intégration de Three.js avec React a nécessité une architecture optimisée pour assurer fluidité et précision des rendus.
                     </p>
-                </section>
-
-                <section class="content-section">
-                    <h2 data-translate-key="project-gallery-title">Images du projet</h2>
-                    <div class="project-gallery">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Dashboard" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Analytics" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="3D View" loading="lazy">
-                    </div>
                 </section>
             </div>
         </div>
